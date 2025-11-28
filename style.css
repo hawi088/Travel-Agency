@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fafafa;
+}
+
+#testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 200px;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #66371b;
+    text-align: center;
+}
+
+.sub-title{
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    letter-spacing: 2;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 1 1 350px; 
+    max-width: 400px; 
+    min-width: 300px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-bottom: 15px;
+}
+
+.profile .image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.image-description {
+    text-align: left;
+}
+
+.profile-name {
+    font-weight: 600;
+    margin-bottom: 3px;
+    font-size: 1.1rem;
+}
+
+.location {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.message {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.5;
+}
+@media (max-width: 1200px) {
+    .testimonial-grid {
+        justify-content: space-around;
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .testimonial-card {
+        flex: 1 1 320px;
+        max-width: 350px;
+    }
+}
+@media (max-width: 992px) {
+    #testimonials h2 {
+        font-size: 42px;
+    }
+    
+    .testimonial-grid {
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .testimonial-card {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    #testimonials {
+        padding: 50px 15px;
+    }
+    
+    #testimonials h2 {
+        font-size: 36px;
+    }
+    
+    #testimonials h4 {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .testimonial-grid {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .testimonial-card {
+        flex: 1 1 100%; 
+        max-width: 500px; 
+        min-width: auto;
+        padding: 20px;
+    }
+}
+@media (max-width: 576px) {
+    #testimonials {
+        padding: 40px 10px;
+    }
+    
+    #testimonials h2 {
+        font-size: 32px;
+    }
+    
+    #testimonials h4 {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    
+    .testimonial-grid {
+        gap: 15px;
+        padding: 0 5px;
+    }
+    
+    .testimonial-card {
+        padding: 18px;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .profile {
+        gap: 12px;
+    }
+    
+    .profile .image img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .profile-name {
+        font-size: 1rem;
+    }
+    
+    .message {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 400px) {
+    #testimonials h2 {
+        font-size: 28px;
+    }
+    
+    .testimonial-card {
+        padding: 15px;
+    }
+    
+    .profile {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .profile .image img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .message {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+.accordion-container{
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+.accordion-item input {
+    display: none;
+}
+.accordion-item{
+    margin-bottom: 10px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+}
+.accordion-item:hover{
+    box-shadow: 0 6px 16px 0 rgba(102, 55, 27, 0.35);
+}
+.accordion-header {
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f9f9f9;
+    padding: 0 20px;
+    border-radius:15px;
+}
+
+.accordion-item input:checked ~ .accordion-content {
+    max-height: 200px;
+    padding: 15px 20px;
+}
