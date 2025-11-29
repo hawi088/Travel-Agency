@@ -226,7 +226,7 @@ body{
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     
 }
-.accordion-item:hover{
+.accordion-item:hover{ 
     box-shadow: 0 6px 16px 0 rgba(102, 55, 27, 0.35);
 }
 .accordion-header {
