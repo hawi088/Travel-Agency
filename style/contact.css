@@ -1,0 +1,243 @@
+*{
+            margin:0;
+            padding:0;
+           box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma;
+        }
+        body{
+            line-height:1.6;
+            color:#333;
+            background-color:#f9f9f9;
+        }
+        a{
+            text-decoration:none;
+            color:white;
+        }
+        ul{
+            list-style:none;
+        }
+        .contain{
+            width:90%;
+            max-width:1200px;
+            margin:0 auto;
+            padding:0 15px;
+        }
+        header{
+            background-color:#362100;
+            color:white;
+            padding:20px 0;
+            box-shadow:0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .logo h1{
+            font-size:28px;
+            font-weight:700;
+            letter-spacing:1px;
+        }
+        .logo p{
+            font-size:14px;
+            opacity:0.8;
+            margin-top:5px;
+        }
+        nav ul{
+            display:flex;
+            gap:30px;
+        }
+        nav a{
+            font-weight:500;
+        } 
+        nav a:hover{
+            color:#e7bc2f;
+        }
+        .mobile-menu-btn{
+            display:none;
+            background:none;
+            border:none;
+            color:white;
+            font-size:24px;
+            cursor:pointer;
+        }
+        .hero{
+            background:linear-gradient(rgba(75,44,5,0.8),rgba(33,22,1,0.8)),url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+           padding:100px 20px;
+        } 
+        .hero h2{
+            font-size:42px;
+            margin-bottom:20px;
+        }
+        .hero p{
+            font-size:18px;
+            max-width:700px;
+            margin:0 auto 30px;
+        }
+        .cta-button{
+            display:inline-block;
+            background-color:#362100;
+            color:white;
+            padding:12px 30px;
+            border-radius:5px;
+            font-weight:600;
+        }
+        .cta-button:hover{
+            background-color:#6f522f;
+        }
+        .contact-section{
+            padding:80px 200px;
+            background-color:white;
+        }
+        
+        .contact-container{
+            display:flex;
+            gap:50px;
+            flex-wrap:wrap;
+        }
+        .contact-info{
+            flex:1;
+            min-width:300px;
+        }
+        .contact-info h2{
+            font-size:32px;
+            margin-bottom:20px;
+            color:#362100;
+        }
+        .contact-info > p{
+            margin-bottom:30px;
+            font-size:16px;
+            color:#362100;
+        }
+        .contact-methods{
+            margin-bottom:40px;
+        }
+        .contact-method{
+            margin-bottom:25px;
+        }
+        .contact-method h3{
+            font-size:18px;
+            margin-bottom:10px;
+            color:#362100;
+        }
+        .contact-method p{
+            color:black;
+        }
+        .office-hours{
+            background-color:#fcf7f0;
+            padding:20px;
+            border-radius:5px;
+        } 
+        .office-hours h3{
+            margin-bottom:15px;
+            color:#362100;
+        }
+        .contact-form{
+            flex:1;
+            min-width:300px;
+            background-color:#fcf7f0;
+            padding:30px;
+            border-radius:8px;
+            box-shadow:0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        .contact-form h3{
+            font-size:24px;
+            margin-bottom:20px;
+            color: #5d461a;
+        }
+        
+        .form-group{
+            margin-bottom:20px;
+        }  
+        .form-group label{
+            display:block;
+            margin-bottom:8px;
+            font-weight:500;
+            color:#5d461a;
+        }
+        
+
+        .form-group input,.form-group textarea,.form-group select{
+            width:100%;
+            padding:12px;
+            border:1px solid #f6e7d0;
+            border-radius:5px;
+            font-size:16px;
+        }     
+        .form-group textarea{
+            height:120px;
+            resize:vertical;
+        }
+        .required::after{
+            color:#e5a83e;
+        }
+        
+        .submit-btn{
+            background-color:#362100;
+            color:white;
+            border:none;
+            padding:12px 30px;
+            border-radius:5px;
+            font-size:16px;
+            font-weight:600;
+            cursor:pointer;
+        }
+        .submit-btn:hover{
+            background-color:#6f522f;
+        }
+        footer{
+            background-color:#362100;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding-top:40px;
+            padding-bottom:20px;
+
+        }
+        .footer-content{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            gap:80px;
+            margin-bottom:40px;
+        }
+        .footer-section{
+            flex:1;
+            min-width:200px;
+        }
+        .footer-section h3{
+            font-size:18px;
+            margin-bottom:20px;
+            position:relative;
+            padding-bottom:10px;
+        }
+        .footer-section h3::after{
+            content:'';
+            position:absolute;
+            left:0;
+            bottom:0;
+            width:80px;
+            height:2px;
+            background-color:hsl(42,93%,40%);
+        }
+        .footer-section ul li{
+            margin-bottom:10px;
+        }
+        .footer-section a:hover{
+            color:hsl(42,93%,40%);
+        }
+    
+        .footer-bottom{
+            text-align:center;
+            padding-top:20px;
+            border-top:1px solid rgba(255, 213, 161, 0.1);
+            font-size:14px;
+            color:rgb(212, 212, 212);
+        }
+        
