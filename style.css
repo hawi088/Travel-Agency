@@ -1,0 +1,78 @@
+body {
+  background-color: hsl(21.18deg 39.53% 8.43%);
+  color: white;
+  font-family: "Poppins", "Montserrat", "Raleway", sans-serif;
+}
+.destination-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.destination-header h2 {
+  color: hsl(29.8deg 68.37% 42.16%);
+  font-size: 2.2rem;
+}
+.destination-header p {
+  margin: 5px 0 12px 0;
+  color: hsl(28.73deg 65.14% 42.75%);
+  font-size: 1.2rem;
+}
+.destination-categories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+  padding: 0 25px;
+}
+.destination-categories img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.destination-card {
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: hsl(22.86deg 34.43% 11.96%);
+  color: white;
+  box-shadow: 0 4px 14px rgba(180, 131, 61, 0.35);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.destination-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(180, 131, 61, 0.45);
+  color: hsl(29.8deg 69.01% 41.76%);
+}
+.wrapper-image {
+  width: 100%;
+  height: 180px;
+}
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.destination-card:hover img {
+  opacity: 0.9;
+}
+.wrapper-text {
+  padding: 15px;
+  background-color: hsl(22, 35%, 12%);
+}
+.wrapper-text button {
+  background-color: hsl(9.23deg 10.57% 24.12%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+.wrapper-text button:hover {
+  background-color: #b4833d;
+}
