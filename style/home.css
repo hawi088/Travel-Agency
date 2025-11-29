@@ -113,7 +113,9 @@ body{
   max-width: 1400px;
   margin: 0 auto;
 }
-
+.testimonial-profile-name{
+  color: black;
+}
 .testimonial-card {
   background: #fff;
   padding: 25px;
@@ -149,7 +151,7 @@ body{
   text-align: left;
 }
 
-.profile-name {
+.testimonial-profile-name {
   font-weight: 600;
   margin-bottom: 3px;
   font-size: 1.1rem;
@@ -257,8 +259,9 @@ body{
       height: 45px;
   }
   
-  .profile-name {
+  .testimonial-profile-name {
       font-size: 1rem;
+      color: black;
   }
   
   .message {
