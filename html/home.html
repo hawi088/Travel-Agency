@@ -6,13 +6,89 @@
     <title>Travel Agency</title>
     <link rel="stylesheet" href="/style/home.css" />
     <link rel="stylesheet" href="/mediaqueries/home.css" />
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
 
   <body>
     <!-- homepage -->
-    <header id="homepage"></header>
+    <div class="banner">
+      <div class="navbar">
+          <!-- <img src="../images/photo_2025-11-30_18-15-51.jpg" class="logo"> -->
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div class="content">
+          <h1>FIND YOUR STORY IN ETHIOPIA</h1>
+          <p>Journey Through Rich Heritage and<br>Unforgrttable Moments with Abyssinia Adventures</p>
+          <div>
+              <button type="button" class="btn"><span></span>Explore Destinations</button>
+              <button type="button" class="btn"><span></span>Contact Us</button>
+          </div>
+      </div>
+  </div>
     <!-- quick booking -->
-    <section id="quick-booking"></section>
+    <section class="booking">
+      <div class="booking-container">
+      <form class="booking-form" method="post">
+          <h2>Quick Booking</h2>
+          <div class="input-group">
+              <label for="name">Full Name</label><br>
+              <input type="text" name="" id="name" placeholder="Enter Your Full Name" required>
+          </div>
+          <div class="input-group">
+              <label for="email">Email Address</label><br>
+              <input type="email" name="" id="email" placeholder="Enter Your Email" required>
+          </div>
+          <div class="input-group">
+              <label for="text">Destination</label><br>
+              <select id="destination" required>
+                <option value="">Select Destinations</option>
+                <option value="lalibela">Lalibela</option>
+                <option value="aksum">Aksum</option>
+                <option value="harar">Harar</option>
+                <option value="danakil">Danakil</option>
+                <option value="simien mountains">Simien Mountains</option>
+                <option value="lake tana">Lake Tana</option>
+                <option value="gondar">Gondar</option>
+                <option value="omo valley">Omo Valley</option>
+              </select>
+          </div>
+          <div class="date-group">
+          <div class="input-group">
+              <label for="checkin">Check-In Date</label><br>
+              <input type="date" id="checkin" required>
+          </div>
+          <div class="input-group">
+              <label for="checkout">Check-Out Date</label><br>
+              <input type="date" id="checkout" required>
+          </div>
+          </div>
+          <button type="submit" class="submit-button">Search Trip</button>
+      </form>
+      </div>
+  </section>
+  <section class="why">
+      <h1>Why Choose Us?</h1>
+      <div class="row">
+          <div class="why-col">
+              <i class="fas fa-user-tie icon"></i>
+              <h3>Expert Guides</h3>
+              <p>Professional tour guides with years of experience</p>
+      </div>
+      <div class="why-col">
+              <i class="fas fa-shield-alt icon"></i>
+              <h3>Safe Travel</h3>
+              <p>Comprehensive insurance and safety measures</p>
+      </div>
+      <div class="why-col">
+              <i class="fas fa-tags icon"></i>
+              <h3>Best Prices</h3>
+              <p>Competitive rates and flexible payment options</p>
+      </div>
+  </section>
     <!-- populare destination -->
     <section id="popular-destination">
       <div class="destination-header">
@@ -189,6 +265,8 @@
             
     </section>
     <!-- footer -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+      
+    </footer>
   </body>
 </html>
