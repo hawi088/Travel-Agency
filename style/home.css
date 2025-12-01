@@ -549,7 +549,7 @@ body{
 }
 .accordion-item{
   margin-bottom: 10px;
- box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ box-shadow: 0 4px 12px rgba(138, 64, 4, 0.712);
  overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   
@@ -575,6 +575,9 @@ body{
   background-color: #f9f9f9;
   padding: 0 20px;
   border-radius:15px;
+  color:black;
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .accordion-item input:checked ~ .accordion-content {
