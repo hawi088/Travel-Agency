@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family:'Segoe UI', Tahoma;
 }
 .banner{
     width: 100%;
@@ -598,3 +598,62 @@ body {
   max-height: 200px;
   padding: 15px 20px;
 }
+footer{
+  margin-top:40px;
+  background-color:#362100;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding-top:40px;
+  padding-bottom:20px;
+  }
+  .footer-content{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:80px;
+    margin-bottom:40px;
+     color:white;
+        }
+  .footer-section{
+     flex:1;
+    min-width:200px;
+    color:white;
+ }
+ a{
+  text-decoration:none;
+ }
+ .footer-section p{
+  color:rgb(212, 212, 212);
+ }
+.footer-section h3{
+  font-size:18px;
+  margin-bottom:20px;
+  position:relative;
+  padding-bottom:10px;
+        }
+.footer-section h3::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:80px;
+  height:2px;
+  background-color:hsl(42,93%,40%);
+        }
+.footer-section ul li{
+            margin-bottom:10px;
+        }
+        .footer-section a:hover{
+            color:hsl(42,93%,40%);
+        }
+        .footer-section a{
+          color:rgb(212, 212, 212);
+        }
+        .footer-bottom{
+           text-align:center;
+            padding-top:20px;
+            border-top:1px solid rgba(255, 213, 161, 0.1);
+            font-size:14px;
+        }
