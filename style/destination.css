@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.contain {
+  width: 100%;
+  max-height: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header {
+  background-color: white;
+  color: #66371b;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.logo p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav a {
+  font-weight: 500;
+}
+nav a:hover {
+  color: #e7bc2f;
+}
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.main-content h1 {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 60px;
+  color: #66371b;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 8px;
+}
+.main-content p {
+  font-size: 1.1rem;
+  margin-top: 1px;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  letter-spacing: 2;
+}
+#filters-row {
+  max-width: 750px;
+  margin: 3rem auto 0.4rem;
+  display: flex;
+}
+.search-wrapper {
+  flex: 1;
+}
+#search-bar {
+  width: 90%;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px; /* pill shape */
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 0.85rem;
+  background: #ffffff;
+  margin: 0;
+}
+#search-bar::placeholder {
+  color: #6b7280;
+}
+#filtering-type {
+  flex: 0 0 190px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 0.95rem;
+  padding: 0 0.25rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  cursor: pointer;
+  width: 15%;
+}
+
+#filtering-type option {
+  background: white;
+  border: 1px solid #66371b;
+  border-radius: 10px;
+}
+
+.result-info {
+  text-align: center;
+  margin-bottom: 10rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+.destination-categories {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+
+  margin: 0 8px;
+  justify-content: flex-start;
+}
+.destination-categories img {
+  width: 200px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.destination-card {
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 380px;
+  scroll-snap-align: start;
+  min-height: 380px;
+  flex-direction: column;
+  margin: 8px 0;
+  min-width: 395px;
+}
+.destination-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px hsl(9.23deg 10.57% 24.12%);
+  transition: opacity 150ms ease-in-out;
+}
+.wrapper-image {
+  height: 295px;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+}
+.price-overlay {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: linear-gradient(to right, #66371b, #f5f5f5);
+  border: none;
+  border-radius: 999px;
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+  max-width: 50%;
+}
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.destination-card:hover img {
+  opacity: 0.9;
+}
+.ri-map-pin-line {
+  font-family: "Lato", system-ui, sans-serif;
+  color: #6b7280;
+  text-align: left;
+}
+.wrapper-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper-text h3 {
+  font: 1.1rem;
+  color: #1f2933;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+.wrapper-text p {
+  text-align: left;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+.wrapper-text button {
+  background-color: #66371b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+  margin-top: auto;
+}
+.wrapper-text button:hover {
+  opacity: 0.9;
+}

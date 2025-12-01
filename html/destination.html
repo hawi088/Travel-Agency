@@ -6,9 +6,414 @@
     <title>Destinations</title>
     <link rel="stylesheet" href="../style/destination.css" />
     <link rel="stylesheet" href="/mediaqueries/destination.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Lato:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <header>
+      <div class="contain">
+        <div class="header-content">
+          <div class="logo">
+            <h1><a href="/html/home.html">Wanderlust</a></h1>
+          </div>
+          <button class="mobile-menu-btn">☰</button>
+          <nav class="mobile-nav">
+            <ul>
+              <li><a href="/html/home.html">Home</a></li>
+              <li><a href="/html/destination.html">Destinations</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <h1>Explore Ethiopian Destinations</h1>
+      <p>
+        Discover Ethiopia's amazing historical sites, natural wonders, and
+        cultural treasures
+      </p>
+      <section id="filters-row">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="search-bar"
+            name="destination-filtering"
+            placeholder="Search destinations, locations"
+          />
+        </div>
+        <select name="categories" id="filtering-type">
+          <i class="ri-filter-line"></i>
+          <option value="All Categories ">All Categories</option>
+          <option value="Cultural Heritage">Cultural Heritage</option>
+          <option value="Mountains">Mountains</option>
+        </select>
+      </section>
+      <div class="result-info">5 destinations found</div>
+      <section id="popular-destination">
+        <div class="destination-categories">
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,500 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Amhara Region, Northern Ethiopia.</i>
+              <h3>Lalibela Rock Churches</h3>
+              <p>
+                A holy town famous for its 12th‑century rock‑hewn churches, a
+                major UNESCO World Heritage pilgrimage site.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/aksum.jpg" alt="" />
+              <button class="price-overlay">From 5,500 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Tigray Region, Northern Ethiopia</i>
+              <h3>Axum</h3>
+              <p>
+                Ancient capital of a powerful kingdom, known for towering stone
+                stelae and important archaeological remains.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/gondar.jpg" alt="" />
+              <button class="price-overlay">From 8,900 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">
+                Amhara Region, North of Lake Tana, Northern Ethiopia</i
+              >
+              <h3>Gondar</h3>
+              <p>
+                Historic city with royal castles and old churches, often called
+                the “Camelot of Africa.”
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 9,000 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">Amhara Region, Northern Ethiopia.</i>
+              <h3>Simien Mountains National Park</h3>
+              <p>
+                Dramatic highland scenery with deep cliffs, ideal for trekking
+                and home to endemic wildlife.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">Amhara Region, Northern Ethiopia.</i>
+              <h3>Bahir Dar</h3>
+              <p>
+                Lakeside city on Lake Tana, gateway to island monasteries and
+                the nearby Blue Nile Falls.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 5,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Highland, Central Ethiopia</i>
+              <h3>Addis Ababa</h3>
+              <p>
+                Lively capital with museums, markets, and viewpoints that
+                showcase Ethiopia’s modern life and deep history.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">Oromia Region, Central Ethiopia.</i>
+              <h3>Debre Libanos</h3>
+              <p>
+                Mountain monastery overlooking a vast gorge, combining spiritual
+                heritage with impressive canyon views.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">
+                North of Addis Ababa, Central Ethiopia.</i
+              >
+              <h3>Entoto Hills</h3>
+              <p>
+                Forested highlands above Addis offering cool air, panoramic city
+                views, and historic churches.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">Oromia Region, Central Ethiopia.</i>
+              <h3>Mount Zuqualla</h3>
+              <p>
+                Dormant volcano with a crater lake and monastery, popular for
+                peaceful hikes and pilgrimages.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Konso Zone, Southern Ethiopia</i>
+              <h3>Konso</h3>
+              <p>
+                Terraced hills and fortified villages that reflect centuries‑old
+                agricultural and cultural practices.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Gamo Zone, Southern Ethiopia.</i>
+              <h3>Arba Minch</h3>
+              <p>
+                Relaxed town by twin lakes, famous for boat trips to see
+                crocodiles and local fishing life.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">
+                Near Arba Minch, Southern Ethiopia.</i
+              >
+              <h3>Nechisar National Park</h3>
+              <p>
+                Park of lakes and savanna landscapes, good for spotting birds,
+                mammals, and beautiful sunsets.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Omo Zone, Southern Ethiopia.</i>
+              <h3>Omo Valley</h3>
+              <p>
+                Remote region known for diverse ethnic groups, unique cultural
+                traditions, and colorful weekly markets.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Harari Region, Eastern Ethiopia.</i>
+              <h3>Harar</h3>
+              <p>
+                Ancient walled city with narrow alleys, coffee culture, and
+                unique traditions like feeding hyenas at night.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">
+                Addis–Djibouti corridor, Eastern Ethiopia</i
+              >
+              <h3>Dire Dawa</h3>
+              <p>
+                Historic railway town and commercial hub with lively streets and
+                a mix of old and new architecture.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">
+                Park in the Afar and Oromia border area, Eastern Ethiopia</i
+              >
+              <h3>Awash National Park</h3>
+              <p>
+                Rift Valley park with savanna, hot springs, waterfalls, and
+                chances to see wildlife.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Gambella Region, western Ethiopia</i>
+              <h3>Gambella National Park</h3>
+              <p>
+                Wetland and grassland wilderness, important for migratory
+                wildlife and birdlife.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line"> Western Ethiopia.</i>
+              <h3>Benishangul‑Gumuz</h3>
+              <p>
+                Little‑visited area of river gorges and rugged landscapes along
+                the Blue Nile.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+          <a href="" class="destination-card">
+            <div
+              class="wrapper-image"
+              data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+            >
+              <img src="/images/northern/laliblea.jpg" alt="" />
+              <button class="price-overlay">From 8,300 ETB</button>
+            </div>
+            <div class="wrapper-text">
+              <i class="ri-map-pin-line">Kaffa Zone, southwestern Ethiopia</i>
+              <h3>Kaffa Coffee Highlands</h3>
+              <p>
+                Birthplace of Arabica coffee, with lush cloud forests, the Kafa
+                Biosphere Reserve, waterfalls, and rich coffee culture around
+                Bonga.
+              </p>
+              <button>Explore Region</button>
+            </div>
+          </a>
+        </div>
+      </section>
     <h1>Explore Ethiopian Destinations</h1>
     <p>
       Discover Ethiopia's amazing historical sites, natural wonders, and
@@ -26,7 +431,81 @@
         <option value="Cultural Heritage">Cultural Heritage</option>
         <option value="Mountains">Mountains</option>
       </select>
+      <div class="results-info">5 destinations found</div>
     </div>
+    <section id="popular-destination">
+      <h2>Northern Destinations</h2>
+      <div class="destination-categories">
+        <a href="" class="destination-card">
+          <div
+            class="wrapper-image"
+            data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+          >
+            <img src="/images/northern/laliblea.jpg" alt="" />
+          </div>
+          <div class="wrapper-text">
+            <h3>Northern Ethiopia</h3>
+            <p>5 Destinations</p>
+            <button>Explore Region</button>
+          </div>
+        </a>
+        <a href="" class="destination-card">
+          <div
+            class="wrapper-image"
+            data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+          >
+            <img src="/images/northern/laliblea.jpg" alt="" />
+          </div>
+          <div class="wrapper-text">
+            <h3>Northern Ethiopia</h3>
+            <p>5 Destinations</p>
+            <button>Explore Region</button>
+          </div>
+        </a>
+        <a href="" class="destination-card">
+          <div
+            class="wrapper-image"
+            data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+          >
+            <img src="/images/northern/laliblea.jpg" alt="" />
+          </div>
+          <div class="wrapper-text">
+            <h3>Northern Ethiopia</h3>
+            <p>
+              Marvel at the 12th-century rock-hewn churches, a UNESCO World
+              Heritage Site and spiritual center.
+            </p>
+            <button>Explore Region</button>
+          </div>
+        </a>
+        <a href="" class="destination-card">
+          <div
+            class="wrapper-image"
+            data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+          >
+            <img src="/images/northern/laliblea.jpg" alt="" />
+          </div>
+          <div class="wrapper-text">
+            <h3>Northern Ethiopia</h3>
+            <p>5 Destinations</p>
+            <button>Explore Region</button>
+          </div>
+        </a>
+        <a href="" class="destination-card">
+          <div
+            class="wrapper-image"
+            data-images='["/images/northern/laliblea.jpg","images/northern/aksum.jpg"]'
+          >
+            <img src="/images/northern/laliblea.jpg" alt="" />
+          </div>
+          <div class="wrapper-text">
+            <h3>Northern Ethiopia</h3>
+            <p>5 Destinations</p>
+            <button>Explore Region</button>
+          </div>
+        </a>
+      </div>
+    </section>
     <!-- footer section -->
     <footer id="footer"></footer>
   </body>
