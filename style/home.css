@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 * {
   margin: 0;
   padding: 0;
@@ -255,13 +254,6 @@ span {
 #popular-destination {
   margin-top: 80px;
 }
-=======
-/* body {
-  background-color: hsl(21.18deg 39.53% 8.43%);
-  color: white;
-  font-family: "Poppins", "Montserrat", "Raleway", sans-serif;
-} */
->>>>>>> Stashed changes
 .destination-header {
   text-align: center;
   margin-bottom: 40px;
@@ -280,7 +272,6 @@ span {
 }
 .destination-categories {
   display: flex;
-<<<<<<< Updated upstream
   flex-wrap: wrap;
   width: 100%;
   gap: 1.5rem;
@@ -290,35 +281,18 @@ span {
 .destination-categories img {
   width: 100%;
   height: 180px; /* or 100% if you want full card height */
-=======
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  column-gap: 20px;
-  padding: 0 25px;
-  gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 2rem;
-}
-.destination-categories img {
-  width: 200px;
-  height: 600px;
->>>>>>> Stashed changes
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
 
 .destination-card {
   display: flex;
-<<<<<<< Updated upstream
   flex-direction: column;
-=======
->>>>>>> Stashed changes
   position: relative;
   border-radius: 20px;
   cursor: pointer;
   background-color: white;
   color: black;
-<<<<<<< Updated upstream
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -328,31 +302,14 @@ span {
   max-width: calc(25% - 1.5rem);
   padding: 0;
   margin: 8px 0;
-=======
-  /*   box-shadow: 0 4px 12px hsl(9.23deg 10.57% 24.12%); */
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 0 0 320px; /* fixed-ish width */
-  scroll-snap-align: start;
-  min-height: 380px;
-  flex-direction: column;
-  margin: 8px 0;
-
-  /* overflow: hidden; */
->>>>>>> Stashed changes
 }
 .destination-card:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px hsl(9.23deg 10.57% 24.12%);
-<<<<<<< Updated upstream
-=======
-  /*  color: hsl(29.8deg 69.01% 41.76%); */
->>>>>>> Stashed changes
   transition: opacity 150ms ease-in-out;
 }
 
 .wrapper-image {
-<<<<<<< Updated upstream
   height: 295px;
   width: 100%;
   object-fit: cover;
@@ -378,10 +335,11 @@ span {
   display: flex;
   flex-direction: column;
   height: 100%;
+  text-align: left;
 }
 .wrapper-text h3 {
   font: 1.1rem;
-  color: #1f2933;
+  color: #66371b;
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
     sans-serif;
 }
@@ -389,6 +347,9 @@ span {
   text-align: left;
   font-size: 0.85rem;
   color: #6b7280;
+}
+.wrapper-text .destination-no {
+  padding: 5px 0;
 }
 .wrapper-text button {
   background-color: #66371b;
@@ -405,99 +366,6 @@ span {
 .wrapper-text button:hover {
   opacity: 0.9;
 }
-/*.destination-categories {
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  column-gap: 20px;
-  padding: 0 25px;
-  gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 2rem;
-}
-.destination-categories img {
-  width: 200px;
-  height: 600px;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-}
-
-.destination-card {
-  display: flex;
-
-  position: relative;
-  border-radius: 20px;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /*  flex: 0 0 320px;
-  scroll-snap-align: start; */
-/*  min-height: 380px;
-  flex-direction: column;
-  margin: 8px 0;
-}
-.destination-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px hsl(9.23deg 10.57% 24.12%);
-  transition: opacity 150ms ease-in-out;
-  color: #66371b;
-}
-
-.wrapper-image {
-  height: 295px;
-  width: 100%;
-=======
-  height: 295px; /* try 220–260px */
-  width: 100%;
->>>>>>> Stashed changes
-  object-fit: cover;
-  display: block;
-}
-.destination-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-.destination-card:hover img {
-  opacity: 0.9;
-}
-.wrapper-text {
-  padding: 15px;
-<<<<<<< Updated upstream
-}
-.wrapper-text p {
-  color: #6b7280;
-}
-.destination-no {
-  font-size: 0.85rem;
-=======
-  /* background-color: hsl(22, 35%, 12%); */
->>>>>>> Stashed changes
-}
-.wrapper-text button {
-  background-color: #66371b;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 10px 0;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  width: 100%;
-}
-.wrapper-text button:hover {
-<<<<<<< Updated upstream
-  opacity: 0.9;
-}  */
-=======
-  background-color: #66371b;
-}
->>>>>>> Stashed changes
 body {
   margin: 0;
   padding: 0;
