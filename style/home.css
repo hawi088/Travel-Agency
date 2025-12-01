@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
+=======
+/* body {
+  background-color: hsl(21.18deg 39.53% 8.43%);
+  color: white;
+  font-family: "Poppins", "Montserrat", "Raleway", sans-serif;
+} */
+>>>>>>> Stashed changes
 .destination-header {
   text-align: center;
   margin-bottom: 40px;
@@ -38,24 +46,45 @@
   cursor: pointer;
   background-color: white;
   color: black;
+<<<<<<< Updated upstream
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 0 0 320px;
+=======
+  /*   box-shadow: 0 4px 12px hsl(9.23deg 10.57% 24.12%); */
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 320px; /* fixed-ish width */
+>>>>>>> Stashed changes
   scroll-snap-align: start;
   min-height: 380px;
   flex-direction: column;
   margin: 8px 0;
+<<<<<<< Updated upstream
+=======
+
+  /* overflow: hidden; */
+>>>>>>> Stashed changes
 }
 .destination-card:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px hsl(9.23deg 10.57% 24.12%);
+<<<<<<< Updated upstream
   transition: opacity 150ms ease-in-out;
   color: #66371b;
 }
 
 .wrapper-image {
   height: 295px;
+=======
+  /*  color: hsl(29.8deg 69.01% 41.76%); */
+  transition: opacity 150ms ease-in-out;
+}
+
+.wrapper-image {
+  height: 295px; /* try 220–260px */
+>>>>>>> Stashed changes
   width: 100%;
   object-fit: cover;
   display: block;
@@ -71,12 +100,16 @@
 }
 .wrapper-text {
   padding: 15px;
+<<<<<<< Updated upstream
 }
 .wrapper-text p {
   color: #6b7280;
 }
 .destination-no {
   font-size: 0.85rem;
+=======
+  /* background-color: hsl(22, 35%, 12%); */
+>>>>>>> Stashed changes
 }
 .wrapper-text button {
   background-color: #66371b;
@@ -90,7 +123,11 @@
   width: 100%;
 }
 .wrapper-text button:hover {
+<<<<<<< Updated upstream
   opacity: 0.9;
+=======
+  background-color: #66371b;
+>>>>>>> Stashed changes
 }
 body {
   margin: 0;
