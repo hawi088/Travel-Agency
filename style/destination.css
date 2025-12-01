@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 * {
   margin: 0;
   padding: 0;
@@ -145,44 +144,27 @@ nav a:hover {
 .destination-categories img {
   width: 200px;
   height: 600px;
-=======
-body {
-  /*  background-color: hsl(21.18deg 39.53% 8.43%);
-  color: white; */
-  font-family: "Poppins", "Montserrat", "Raleway", sans-serif;
-}
-.destination-categories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.destination-categories img {
-  width: 300px;
-  height: 400px;
->>>>>>> Stashed changes
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
 
 .destination-card {
-<<<<<<< Updated upstream
   display: flex;
-
+  justify-content: center;
   position: relative;
   border-radius: 20px;
   cursor: pointer;
   background-color: white;
-  color: black;
+  color: inherit;
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 0 0 380px;
   scroll-snap-align: start;
-  min-height: 380px;
+  height: 480px;
   flex-direction: column;
-
   margin: 8px 0;
-  min-width: 395px;
+  min-width: 396px;
 }
 .destination-card:hover {
   transform: scale(1.03);
@@ -190,10 +172,14 @@ body {
   transition: opacity 150ms ease-in-out;
 }
 .wrapper-image {
-  height: 295px;
+  height: 295px !important;
   width: 100%;
-  object-fit: cover;
-  display: flex;
+}
+.wrapper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image covers area without distortion */
+  display: block;
 }
 .price-overlay {
   position: absolute;
@@ -207,37 +193,17 @@ body {
   font-size: 0.9rem;
   transition: background 0.2s ease;
   max-width: 50%;
-=======
-  display: block;
-  position: relative;
-  border-radius: 20px;
-  cursor: pointer;
-  background-color: hsl(22.86deg 34.43% 11.96%);
-  color: white;
-  box-shadow: 0 4px 14px rgba(180, 131, 61, 0.35);
-  text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.destination-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(180, 131, 61, 0.45);
-  color: hsl(29.8deg 69.01% 41.76%);
-}
-.wrapper-image {
-  width: 100%;
-  height: 180px;
->>>>>>> Stashed changes
 }
 .destination-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.3s ease;
 }
 .destination-card:hover img {
   opacity: 0.9;
 }
-<<<<<<< Updated upstream
 .ri-map-pin-line {
   font-family: "Lato", system-ui, sans-serif;
   color: #6b7280;
@@ -248,38 +214,34 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  flex: 1;
 }
 .wrapper-text h3 {
   font: 1.1rem;
   color: #1f2933;
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
     sans-serif;
+  padding: 10px 0;
+  margin-bottom: 0.4rem;
 }
 .wrapper-text p {
   text-align: left;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #6b7280;
+  padding: 0;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
 }
 .wrapper-text button {
   background-color: #66371b;
-=======
-.wrapper-text {
-  padding: 20px;
-  background-color: hsl(22, 35%, 12%);
-}
-.wrapper-text button {
-  background-color: hsl(9.23deg 10.57% 24.12%);
->>>>>>> Stashed changes
   border: none;
   border-radius: 8px;
   color: white;
   padding: 10px 0;
   font-size: 0.9rem;
   cursor: pointer;
-<<<<<<< Updated upstream
   transition: 0.2s ease;
   width: 100%;
-  margin-top: auto;
 }
 .wrapper-text button:hover {
   opacity: 0.9;
@@ -353,11 +315,4 @@ footer {
   .contact-section {
     padding: 30px;
   }
-=======
-  transition: background 0.2s ease;
-  width: 100%;
-}
-.wrapper-text button:hover {
-  background-color: #b4833d;
->>>>>>> Stashed changes
 }
