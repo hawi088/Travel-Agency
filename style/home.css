@@ -51,6 +51,7 @@
   transform: scale(1.03);
   box-shadow: 0 8px 20px hsl(9.23deg 10.57% 24.12%);
   transition: opacity 150ms ease-in-out;
+  color: #66371b;
 }
 
 .wrapper-image {
@@ -71,8 +72,14 @@
 .wrapper-text {
   padding: 15px;
 }
+.wrapper-text p {
+  color: #6b7280;
+}
+.destination-no {
+  font-size: 0.85rem;
+}
 .wrapper-text button {
-  background-color: hsl(9.23deg 10.57% 24.12%);
+  background-color: #66371b;
   border: none;
   border-radius: 8px;
   color: white;
@@ -83,7 +90,7 @@
   width: 100%;
 }
 .wrapper-text button:hover {
-  background-color: #66371b;
+  opacity: 0.9;
 }
 body {
   margin: 0;
