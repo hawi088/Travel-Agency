@@ -1,9 +1,16 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #fafafa;
+  overflow-x:hidden;
+  max-width:100vw;
 }
 
 a {
@@ -128,11 +135,11 @@ nav a:hover {
 .destination-categories {
   display: flex;
   flex-wrap: wrap;
-
+  width:100vw;
   gap: 1.5rem;
 
   margin: 0 8px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .destination-categories img {
   width: 200px;
@@ -155,6 +162,7 @@ nav a:hover {
   scroll-snap-align: start;
   min-height: 380px;
   flex-direction: column;
+  
   margin: 8px 0;
   min-width: 395px;
 }
@@ -221,10 +229,80 @@ nav a:hover {
   padding: 10px 0;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition:0.2s ease;
   width: 100%;
   margin-top: auto;
 }
 .wrapper-text button:hover {
   opacity: 0.9;
+}
+footer{
+  background-color:#362100;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding-top:40px;
+  padding-bottom:20px;
+  margin-top:40px;
+  }
+  .footer-content{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:80px;
+    margin-bottom:40px;
+     color:white;
+        }
+  .footer-section{
+     flex:1;
+    min-width:200px;
+    color:white;
+ }
+ .footer-section p{
+  color:rgb(212, 212, 212);
+ }
+.footer-section h3{
+  font-size:18px;
+  margin-bottom:20px;
+  position:relative;
+  padding-bottom:10px;
+        }
+.footer-section h3::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:80px;
+  height:2px;
+  background-color:hsl(42,93%,40%);
+        }
+.footer-section ul li{
+            margin-bottom:10px;
+        }
+        .footer-section a:hover{
+            color:hsl(42,93%,40%);
+        }
+        .footer-section a{
+          color:rgb(212, 212, 212);
+        }
+        .footer-bottom{
+           text-align:center;
+            padding-top:20px;
+            border-top:1px solid rgba(255, 213, 161, 0.1);
+            font-size:14px;
+        }
+
+@media(max-width:768px){
+    footer{
+        padding-left:50px;
+    }
+    .footer-content{
+        flex-direction:column;
+        gap:30px;
+        padding-left:40px;
+            }
+        .contact-section{
+                padding:30px;
+            }
 }
