@@ -273,14 +273,15 @@ span {
 .destination-categories {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 1400px;
   gap: 1.5rem;
-  margin: 0 8px;
+  margin: 0 auto;
+  padding: 0 20px;
   justify-content: flex-start;
 }
 .destination-categories img {
   width: 100%;
-  height: 180px; /* or 100% if you want full card height */
+  height: 180px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
@@ -301,7 +302,7 @@ span {
   height: 380px;
   max-width: calc(25% - 1.5rem);
   padding: 0;
-  margin: 8px 0;
+  margin: 0;
 }
 .destination-card:hover {
   transform: scale(1.03);
@@ -459,129 +460,6 @@ body {
   margin-top: 10px;
   text-align: left;
   line-height: 1.5;
-}
-@media (max-width: 1200px) {
-  .testimonial-grid {
-    justify-content: space-around;
-    gap: 25px;
-    padding: 0 15px;
-  }
-
-  .testimonial-card {
-    flex: 1 1 320px;
-    max-width: 350px;
-  }
-}
-@media (max-width: 992px) {
-  #testimonials h2 {
-    font-size: 42px;
-  }
-
-  .testimonial-grid {
-    justify-content: center;
-    gap: 25px;
-  }
-
-  .testimonial-card {
-    flex: 1 1 calc(50% - 40px);
-    max-width: calc(50% - 40px);
-    min-width: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-  #testimonials {
-    padding: 50px 15px;
-  }
-
-  #testimonials h2 {
-    font-size: 36px;
-  }
-
-  #testimonials h4 {
-    font-size: 1rem;
-    margin-bottom: 30px;
-  }
-
-  .testimonial-grid {
-    gap: 20px;
-    padding: 0 10px;
-  }
-
-  .testimonial-card {
-    flex: 1 1 100%;
-    max-width: 500px;
-    min-width: auto;
-    padding: 20px;
-  }
-}
-@media (max-width: 576px) {
-  #testimonials {
-    padding: 40px 10px;
-  }
-
-  #testimonials h2 {
-    font-size: 32px;
-  }
-
-  #testimonials h4 {
-    font-size: 0.95rem;
-    margin-bottom: 25px;
-    padding: 0 10px;
-  }
-
-  .testimonial-grid {
-    gap: 15px;
-    padding: 0 5px;
-  }
-
-  .testimonial-card {
-    padding: 18px;
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .profile {
-    gap: 12px;
-  }
-
-  .profile .image img {
-    width: 45px;
-    height: 45px;
-  }
-
-  .testimonial-profile-name {
-    font-size: 1rem;
-    color: black;
-  }
-
-  .message {
-    font-size: 0.95rem;
-  }
-}
-@media (max-width: 400px) {
-  #testimonials h2 {
-    font-size: 28px;
-  }
-
-  .testimonial-card {
-    padding: 15px;
-  }
-
-  .profile {
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-
-  .profile .image img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .message {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
 }
 .accordion-container {
   max-width: 700px;
