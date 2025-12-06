@@ -777,15 +777,16 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-legal a {
+.footer-legal p {
   color: #9ca3af;
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 13px;
 }
 
-.footer-legal a:hover {
+.footer-legal p:hover {
   color: #e7bc2f;
+  cursor: pointer;
 }
 
 /* Responsive Design */
