@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #fafafa;
   color: #1f2937;
   line-height: 1.6;
@@ -45,7 +45,7 @@ header {
 }
 
 .logo h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 800;
   color: #66371b;
@@ -55,11 +55,11 @@ header {
 .logo a {
   text-decoration: none;
   color: inherit;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .logo a:hover {
-  color:#e7bc2f;
+  color: #e7bc2f;
 }
 
 /* Desktop Navigation */
@@ -71,7 +71,7 @@ header {
 
 .desktop-nav a {
   text-decoration: none;
-  color:#1f2937;
+  color: #1f2937;
   font-weight: 600;
   font-size: 16px;
   padding: 8px 0;
@@ -80,7 +80,7 @@ header {
 }
 
 .desktop-nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -97,7 +97,7 @@ header {
 
 .desktop-nav a:hover,
 .desktop-nav a.active {
-  color:#66371b;
+  color: #66371b;
 }
 
 /* Mobile Navigation */
@@ -142,13 +142,13 @@ header {
 .mobile-nav a {
   font-size: 24px;
   font-weight: 600;
-  color:#1f2937;
+  color: #1f2937;
   text-decoration: none;
   padding: 15px 0;
   display: block;
   border-bottom: 1px solid #eee;
   width: 100%;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .mobile-nav a:hover {
@@ -184,17 +184,17 @@ header {
 }
 
 .page-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 800;
-  color:#66371b;
+  color: #66371b;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .page-subtitle {
   font-size: 18px;
-  color:#6b7280;
+  color: #6b7280;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.7;
@@ -203,7 +203,7 @@ header {
 /* Filters Section */
 .filters-section {
   margin-bottom: 40px;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .filters-container {
@@ -229,7 +229,7 @@ header {
   font-size: 16px;
   background-color: #ffffff;
   transition: all 0.3s ease;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .search-input:focus,
@@ -245,7 +245,7 @@ header {
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color:#6b7280;
+  color: #6b7280;
   font-size: 20px;
 }
 
@@ -266,24 +266,22 @@ header {
   color: #66371b;
 }
 
-/* Destinations Grid */
-.destinations-grid {
-  padding: 0 20px;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
   margin-bottom: 50px;
 }
-
+.destinations-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 /* Destination Card */
 .destination-card {
-  background-color:#ffffff;
-  border-radius:12px;
+  background-color: #ffffff;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow:0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   height: 100%;
   display: flex;
@@ -292,12 +290,13 @@ header {
 
 .destination-card:hover {
   transform: translateY(-8px);
-  box-shadow:0 12px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
 }
 
 .card-image {
   position: relative;
-  height: 240px;
+  width: 100%;
+  height: 340px;
   overflow: hidden;
 }
 
@@ -316,7 +315,7 @@ header {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: linear-gradient(135deg,#66371b, #8b4513);
+  background: linear-gradient(135deg, #66371b, #8b4513);
   color: #ffffff;
   padding: 8px 16px;
   border-radius: 20px;
@@ -330,7 +329,7 @@ header {
   top: 15px;
   left: 15px;
   background-color: rgba(255, 255, 255, 0.95);
-  color:#66371b;
+  color: #66371b;
   padding: 6px 12px;
   border-radius: 6px;
   font-size: 12px;
@@ -360,7 +359,7 @@ header {
 }
 
 .card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #1f2937;
@@ -369,7 +368,7 @@ header {
 }
 
 .card-description {
-  color:#6b7280;
+  color: #6b7280;
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -387,8 +386,8 @@ header {
   gap: 8px;
   width: 100%;
   padding: 14px 20px;
-  background: linear-gradient(135deg,#66371b, #8b4513);
-  color:#ffffff;
+  background: linear-gradient(135deg, #66371b, #8b4513);
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -409,12 +408,10 @@ header {
   text-align: center;
 }
 
-
-
 /* Footer */
 footer {
   background: linear-gradient(135deg, #362100 0%, #2c1a00 100%);
-  color:#ffffff;
+  color: #ffffff;
   padding: 60px 0 30px;
   margin-top: auto;
 }
@@ -431,7 +428,7 @@ footer {
 }
 
 .footer-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -439,13 +436,13 @@ footer {
 }
 
 .footer-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 40px;
   height: 3px;
-  background-color:#e7bc2f;
+  background-color: #e7bc2f;
 }
 
 .footer-description,
@@ -469,7 +466,7 @@ footer {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 18px;
   transition: all 0.3s ease;
 }
@@ -497,7 +494,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color:#e7bc2f;
+  color: #e7bc2f;
   padding-left: 5px;
 }
 
@@ -540,8 +537,8 @@ footer {
 
 .newsletter-form button {
   padding: 12px 20px;
-  background-color:#e7bc2f;
-  color:#1f2937;
+  background-color: #e7bc2f;
+  color: #1f2937;
   border: none;
   border-radius: 6px;
   font-size: 18px;
@@ -580,7 +577,7 @@ footer {
 }
 
 .footer-legal a:hover {
-  color:#e7bc2f;
+  color: #e7bc2f;
 }
 
 /* Responsive Design */
@@ -588,7 +585,7 @@ footer {
   .page-title {
     font-size: 42px;
   }
-  
+
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
@@ -598,48 +595,48 @@ footer {
   .desktop-nav {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: block;
   }
-  
+
   .page-title {
     font-size: 36px;
   }
-  
+
   .page-subtitle {
     font-size: 16px;
   }
-  
+
   .filters-container {
     flex-direction: column;
   }
-  
+
   .search-wrapper,
   .filter-wrapper {
     min-width: 100%;
   }
-  
+
   .grid-container {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 30px;
     text-align: center;
   }
-  
+
   .footer-title::after {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .social-links {
     justify-content: center;
   }
-  
+
   .contact-info li {
     justify-content: center;
   }
@@ -649,20 +646,20 @@ footer {
   .page-title {
     font-size: 32px;
   }
-  
+
   .container {
     padding: 0 15px;
   }
-  
+
   .card-content {
     padding: 20px;
   }
-  
+
   .price-tag {
     font-size: 12px;
     padding: 6px 12px;
   }
-  
+
   .footer-legal {
     flex-direction: column;
     gap: 10px;
@@ -687,12 +684,24 @@ footer {
 }
 
 /* Stagger animations for cards */
-.destination-card:nth-child(1) { animation-delay: 0.1s; }
-.destination-card:nth-child(2) { animation-delay: 0.2s; }
-.destination-card:nth-child(3) { animation-delay: 0.3s; }
-.destination-card:nth-child(4) { animation-delay: 0.4s; }
-.destination-card:nth-child(5) { animation-delay: 0.5s; }
-.destination-card:nth-child(6) { animation-delay: 0.6s; }
+.destination-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.destination-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.destination-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.destination-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.destination-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.destination-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
 
 /* Focus states for accessibility */
 :focus {
@@ -705,7 +714,7 @@ footer {
   position: absolute;
   top: -40px;
   left: 0;
-  background-color:#66371b;
+  background-color: #66371b;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
